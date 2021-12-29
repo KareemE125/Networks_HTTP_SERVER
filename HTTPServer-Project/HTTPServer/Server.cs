@@ -96,6 +96,7 @@ namespace HTTPServer
             string content;
             try
             {
+                //throw new Exception();
                 LoadRedirectionRules(@"redirectionRules.txt");
 
                 try
@@ -120,23 +121,43 @@ namespace HTTPServer
 
                 badrequest = request.relativeURI.Contains(".html");//....
 
-              
 
 
+                if (!badrequest)
+                {
+                    request.relativeURI = Configuration.BadRequestDefaultPageName;
+
+                    code = StatusCode.BadRequest;
+                   
+                     content = LoadDefaultPage(request.relativeURI);
+
+                    return new Response(code, "text/html", content, "");
+                }
 
 
+                if (!File.Exists(physicalPath))
+                {
+                    request.relativeURI = Configuration.NotFoundDefaultPageName;
 
+                    code = StatusCode.NotFound;
+
+                    content = LoadDefaultPage(request.relativeURI);
+
+
+                    return new Response(code, "text/html", content, "");
+                }
                 //TODO: read the physical file
                 //byte[] fileData = new byte[1000];
-               
+
                 if (redirectedPhysicalPath != "")
                 {
                     
+
                     code = StatusCode.Redirect;
                  
                     //fileData = File.ReadAllBytes(Configuration.RootPath + "\\"+redirectedPhysicalPath);
                     content = LoadDefaultPage(redirectedPhysicalPath);
-
+                    return new Response(code, "text/html", content, redirectedPhysicalPath);
                 }
                 else
                 {
@@ -145,51 +166,27 @@ namespace HTTPServer
 
                     //fileData = File.ReadAllBytes(physicalPath);
                     content = LoadDefaultPage(request.relativeURI);
+                    return new Response(code, "text/html", content, redirectedPhysicalPath);
                 }
                 //content = Encoding.ASCII.GetString(fileData).Trim();
                 //content = LoadDefaultPage(request.relativeURI);
-
+                
                 // Create OK response
-                return new Response( code, "text/html", content, redirectedPhysicalPath);
+                
             }
             catch (Exception ex)
             {
                 Logger.LogException(ex);
                 //TODO: check for bad request and not found
-                if (badrequest)
-                {
-                    request.relativeURI = Configuration.NotFoundDefaultPageName;
-
-                    code = StatusCode.NotFound;
-                    byte[] Data = new byte[1000];
-                    Data = File.ReadAllBytes(Configuration.RootPath + "\\" + request.relativeURI);
-                    content = Encoding.ASCII.GetString(Data).Trim();
-
-
-                    return new Response( code, "text/html", content, "");
-
-                }
-                else
-                {
-                    request.relativeURI = Configuration.BadRequestDefaultPageName;
-
-                    code = StatusCode.BadRequest;
-                    byte[] Data1 = new byte[1000];
-                    Data1 = File.ReadAllBytes(Configuration.RootPath + "\\" + request.relativeURI);
-                    content = Encoding.ASCII.GetString(Data1).Trim();
-
-
-                    return new Response( code, "text/html", content, "");
-                }
+                
                 //ToDo: Internal Server Error. 
                 
                 request.relativeURI = Configuration.InternalErrorDefaultPageName;
 
                 code = StatusCode.InternalServerError;
-                byte[] FillData = new byte[1000];
-                FillData = File.ReadAllBytes(Configuration.RootPath + "\\" + request.relativeURI);
-                content = Encoding.ASCII.GetString(FillData).Trim();
-               
+
+                content = LoadDefaultPage(request.relativeURI);
+
 
                 return new Response( code, "text/html", content, "");
             }

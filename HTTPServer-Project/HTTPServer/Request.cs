@@ -27,8 +27,11 @@ namespace HTTPServer
         RequestMethod method;
         public string relativeURI;
         public HTTPVersion httpVersion;
-        public string http;
-        Dictionary<string, string> headerLines=new Dictionary<string, string>{  };
+  
+        Dictionary<string, string> headerLines=new Dictionary<string, string>
+        {
+        
+        };
 
         
 
@@ -61,13 +64,13 @@ namespace HTTPServer
                 
                 if (isParseRequestLine &&isLoadHeaderLines)
                 {
-                    Console.WriteLine("-----------------------HEADER LINES----------------------------");
+                    Console.WriteLine("ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg");
                     foreach(var em  in headerLines)
                     {
                         Console.WriteLine(em.Key + " " + em.Value);
 
                     }
-                    Console.WriteLine("-----------------------HEADER LINES----------------------------");
+                    Console.WriteLine("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
                     return true;
                 }
 
@@ -93,9 +96,9 @@ namespace HTTPServer
                 relativeURI = URi[1];
 
                 
-                if (parts[2].Trim() == "HTTP/1.1") { httpVersion = HTTPVersion.HTTP11; http = "HTTP/1.1"; }
-                else if (parts[2].Trim() == "HTTP/1.0") { httpVersion = HTTPVersion.HTTP10; http = "HTTP/1.0"; }
-                else if (parts[2].Trim() == "HTTP/0.9") { httpVersion = HTTPVersion.HTTP09; http = "HTTP/0.9"; }
+                if (parts[2].Trim() == "HTTP/1.1") { httpVersion = HTTPVersion.HTTP11; Configuration.ServerHTTPVersion = "HTTP/1.1"; }
+                else if (parts[2].Trim() == "HTTP/1.0") { httpVersion = HTTPVersion.HTTP10; Configuration.ServerHTTPVersion = "HTTP/1.0"; }
+                else if (parts[2].Trim() == "HTTP/0.9") { httpVersion = HTTPVersion.HTTP09; Configuration.ServerHTTPVersion = "HTTP/0.9"; }
 
                 return true;
             }
