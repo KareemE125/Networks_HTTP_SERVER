@@ -14,9 +14,3 @@ D:\5th-term\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.cspr
 D:\5th-term\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.csproj.CoreCompileInputs.cache
 D:\5th-term\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.exe
 D:\5th-term\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.pdb
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\bin\Debug\HTTPServer.exe
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\bin\Debug\HTTPServer.pdb
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.csprojAssemblyReference.cache
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.exe
-C:\Users\LENOVO\Downloads\project\project\Template[2021-2022]\HTTPServer\obj\x86\Debug\HTTPServer.pdb
