@@ -30,34 +30,42 @@ namespace HTTPServer
         }
 
         
-
-        List<string> headerLines = new List<string>();
-
-        public Response( StatusCode code, string contentType, string content, string redirectoinPath)
-        {
-           
-
+        public Response(StatusCode code, string contentType, string content, string redirectoinPath = "", bool headHttpStatus = false)
+        { 
             String statusLine = GetStatusLine(code);
-           
-            responseString = Configuration.ServerHTTPVersion + " " + statusLine + " " + code + "\r\nContent_Type:" + contentType + "\r\nContent_Length:" + content.Length + "\r\nDate:" + DateTime.Now + "\r\n" + "\r\n" + content; 
-            if (redirectoinPath != "") { responseString = responseString + "Location: "+ redirectoinPath;  }
 
-            Console.WriteLine(responseString);
+            responseString = statusLine + "\r\n" +
+                            "Content_Type:" + contentType + "\r\n" +
+                            "Content_Length:" + content.Length + "\r\n" +
+                            "Date:" + DateTime.Now + "\r\n";
+
+            if (!headHttpStatus)  //head doesnt contain content, but everything else is just like get request
+                responseString += "\r\n" + content;
+            
+
+            if (redirectoinPath != "")
+                responseString = responseString + "Location: "+ redirectoinPath; 
+
+            Console.WriteLine("This is the response string: \n" + responseString);
         }
 
         private string GetStatusLine(StatusCode code)
         {
-
+            //ex -> "HTTP/1.1 301 Redirect"
             int codeNumber = 0;
-            if (code == StatusCode.OK) { codeNumber = 200; }
-            else if (code == StatusCode.InternalServerError) { codeNumber = 500; }
-            else if(code == StatusCode.NotFound) { codeNumber = 404; }
-            else if(code == StatusCode.BadRequest) { codeNumber = 400; }
-            else if(code == StatusCode.Redirect) { codeNumber = 301; }
+            if (code == StatusCode.OK)
+                codeNumber = 200;
+            else if (code == StatusCode.InternalServerError)
+                codeNumber = 500; 
+            else if(code == StatusCode.NotFound)
+                codeNumber = 404; 
+            else if(code == StatusCode.BadRequest)
+                codeNumber = 400; 
+            else if(code == StatusCode.Redirect)
+                codeNumber = 301;
 
-            
-            
-            return codeNumber.ToString();
+
+            return Configuration.ServerHTTPVersion + " " + codeNumber.ToString() + " " + code;
         }
     }
 }

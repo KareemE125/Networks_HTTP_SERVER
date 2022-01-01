@@ -12,27 +12,25 @@ namespace HTTPServer
     class Server
     {
         Socket serverSocket;
-        int portNumber;
-        string redirectionMatrixPath;
-        StatusCode code;
-        bool notbadrequest;
+        StatusCode statusCode;
+        bool notBadRequest;
      
         public Server(int portNumber, string redirectionMatrixPath)
-        {
-            this.redirectionMatrixPath = redirectionMatrixPath;
+        { 
+            LoadRedirectionRules(redirectionMatrixPath);
 
-            this.portNumber = portNumber;
             serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-            IPEndPoint hostEndPoint = new IPEndPoint(IPAddress.Any, portNumber);
+            IPEndPoint serverEndpoint = new IPEndPoint(IPAddress.Any, portNumber);  
 
-            serverSocket.Bind(hostEndPoint);  
+            serverSocket.Bind(serverEndpoint);  
         }
 
         public void StartServer()
         {
+            int maxConnectionsNotAccepted = 5;  //tcp accepted them, but application didn't yet
+            serverSocket.Listen(maxConnectionsNotAccepted);
 
-            serverSocket.Listen(100);
             while (true)
             {
                 
@@ -50,7 +48,10 @@ namespace HTTPServer
         public void HandleConnection(object obj)
         {
             Socket clientSock = (Socket)obj;
-            clientSock.ReceiveTimeout = 0;
+            clientSock.ReceiveTimeout = 1000;   //1000 ms, if no data received,
+                                                //clientSock.Receive() throws exception,
+                                                //and we close the connection
+                                                //set to 0 if needs to be infinite
             byte[] data;
             int receivedLength;
 
@@ -58,7 +59,7 @@ namespace HTTPServer
             {
                 try
                 {
-                    data = new byte[1024];
+                    data = new byte[8192];
                     receivedLength = clientSock.Receive(data);
 
 
@@ -68,23 +69,21 @@ namespace HTTPServer
                         break;
                     }
 
-                    string ConvertedData = Encoding.ASCII.GetString(data);
-                    Console.WriteLine(ConvertedData);
-                    string[] header = ConvertedData.Split('\n');
-               
+                    string convertedData = Encoding.ASCII.GetString(data);
+                    Console.WriteLine(convertedData);
+                    string[] fullHeader = convertedData.Split('\n');
 
-
-                    Request request = new Request(header);
+                    Request request = new Request(fullHeader);
 
                     Response response = HandleRequest(request);
                     
-                    clientSock.Send(Encoding.ASCII.GetBytes(response.ResponseString), 0, response.ResponseString.Length, SocketFlags.None);
+                    clientSock.Send(Encoding.ASCII.GetBytes(response.ResponseString));
                 }
                 catch (Exception ex)
                 {
-                    Logger.LogException(ex); 
+                    Logger.LogException(ex);
+                    break;   //break so I dont keep on receiving from client
                 }
-                break;
             }
 
              clientSock.Close();
@@ -96,99 +95,69 @@ namespace HTTPServer
             string content;
             try
             {
-                //throw new Exception();
-                LoadRedirectionRules(@"redirectionRules.txt");
 
-                try
-                {
-                    request.ParseRequest();
-                   
-                }
-                catch (Exception ex)
-                {
-                    Logger.LogException(ex);
-                    request.relativeURI = Configuration.InternalErrorDefaultPageName;
-
-               
-                }
-
-                
-                //TODO: map the relativeURI in request to get the physical path of the resource.
-                String physicalPath = Configuration.RootPath + "\\" + request.relativeURI;
-
-                //TODO: check for redirect
-                String redirectedPhysicalPath = GetRedirectionPagePathIFExist(request.relativeURI);
-
-                notbadrequest = request.relativeURI.Contains(".html");//....
-
-
-
-                if (!notbadrequest||request.BadRequest)
+                //check for bad request
+                notBadRequest = request.ParseRequest();// &&  //need to make sure that I parsed req successfully
+                    //request.relativeURI.Contains(".html"); //and that html extension is present
+                if (!notBadRequest)
                 {
                     request.relativeURI = Configuration.BadRequestDefaultPageName;
-
-                    code = StatusCode.BadRequest;
-                   
-                     content = LoadDefaultPage(request.relativeURI);
-
-                    return new Response(code, "text/html", content, "");
+                    statusCode = StatusCode.BadRequest;
+                    content = LoadDefaultPage(request.relativeURI);
+                    return new Response(statusCode, "text/html", content,
+                        headHttpStatus: request.method == RequestMethod.HEAD);
                 }
+                //-------------------------------------------------------------------------
+
+                //check for post request
+                if (request.method == RequestMethod.POST)
+                {
+                    return HandlePostRequest(request);
+                }
+                
+
+                //check for redirect request
+                String redirectedPhysicalPath = GetRedirectionPagePathIFExist(request.relativeURI);
+                if (redirectedPhysicalPath != "")
+                {
+                    statusCode = StatusCode.Redirect;
+                    content = LoadDefaultPage(redirectedPhysicalPath);
+                    return new Response(statusCode, "text/html", content,
+                        redirectedPhysicalPath, headHttpStatus: request.method == RequestMethod.HEAD);
+                }
+                //-------------------------------------------------------------------------
 
 
+                //check for not found request
+                String physicalPath = Configuration.RootPath + "/" + request.relativeURI;
                 if (!File.Exists(physicalPath))
                 {
                     request.relativeURI = Configuration.NotFoundDefaultPageName;
-
-                    code = StatusCode.NotFound;
-
+                    statusCode = StatusCode.NotFound;
                     content = LoadDefaultPage(request.relativeURI);
-
-
-                    return new Response(code, "text/html", content, "");
+                    return new Response(statusCode, "text/html", content,
+                        headHttpStatus: request.method == RequestMethod.HEAD);
                 }
-                //TODO: read the physical file
-                //byte[] fileData = new byte[1000];
+                //-------------------------------------------------------------------------
 
-                if (redirectedPhysicalPath != "")
-                {
-                    
 
-                    code = StatusCode.Redirect;
-                 
-                    //fileData = File.ReadAllBytes(Configuration.RootPath + "\\"+redirectedPhysicalPath);
-                    content = LoadDefaultPage(redirectedPhysicalPath);
-                    return new Response(code, "text/html", content, redirectedPhysicalPath);
-                }
-                else
-                {
 
-                    code = StatusCode.OK;
-
-                    //fileData = File.ReadAllBytes(physicalPath);
-                    content = LoadDefaultPage(request.relativeURI);
-                    return new Response(code, "text/html", content, redirectedPhysicalPath);
-                }
-                //content = Encoding.ASCII.GetString(fileData).Trim();
-                //content = LoadDefaultPage(request.relativeURI);
-                
-                // Create OK response
-                
+                //a normal status 200 request where the requested resource is found
+                statusCode = StatusCode.OK;
+                content = LoadDefaultPage(request.relativeURI);
+                return new Response(statusCode, "text/html", content,
+                    headHttpStatus: request.method == RequestMethod.HEAD);
             }
             catch (Exception ex)
             {
                 Logger.LogException(ex);
-                //TODO: check for bad request and not found
-                
-                //ToDo: Internal Server Error. 
-                
+
+                //Internal server error request
                 request.relativeURI = Configuration.InternalErrorDefaultPageName;
-
-                code = StatusCode.InternalServerError;
-
+                statusCode = StatusCode.InternalServerError;
                 content = LoadDefaultPage(request.relativeURI);
-
-
-                return new Response( code, "text/html", content, "");
+                return new Response( statusCode, "text/html", content,
+                    headHttpStatus: request.method == RequestMethod.HEAD);
             }
         }
 
@@ -200,6 +169,7 @@ namespace HTTPServer
             }
             catch(Exception ex)
             {
+                Logger.LogException(ex);
                 return "";
             }
             
@@ -217,12 +187,13 @@ namespace HTTPServer
             catch (Exception ex)
             {
                 Logger.LogException(ex);
-                return string.Empty;
+                return "";
             }
         }
 
         private void LoadRedirectionRules(string filePath)
         {
+            //read redirectionrules from file into Configuration.RedirectionRules
             try
             {
                 String[] fileData = File.ReadAllLines(filePath);
@@ -230,7 +201,7 @@ namespace HTTPServer
                 {
                     //when request to aboustus.html ==> it redirects me to aboutus2.html
                     String[] redrectString = elem.Split('-');
-                    Configuration.RedirectionRules= new Dictionary<string, string>
+                    Configuration.RedirectionRules = new Dictionary<string, string>
                     {
                         { redrectString[0] , redrectString[1] }
                     };
@@ -242,6 +213,30 @@ namespace HTTPServer
                 Logger.LogException(ex);
                 Environment.Exit(1);
             }
+        }
+
+        private Response HandlePostRequest(Request request)
+        {
+            //normal headers
+            //Accept-Encoding: gzip, deflate, br
+            //Accept - Language: en - GB,en; q = 0.9
+            //
+            //name=mohamed&otherName=agina
+
+            String content;
+            Dictionary<String, String> receivedPostData = request.extractPostData();
+
+            if (receivedPostData.Count == 0)
+            {
+                request.relativeURI = Configuration.BadRequestDefaultPageName;
+                statusCode = StatusCode.BadRequest;
+                content = "Invalid data format used";
+                return new Response(statusCode, "text", content);
+            }
+
+            content = request.convertPostDataToString(receivedPostData);
+            statusCode = StatusCode.OK;
+            return new Response(statusCode, "text", content);
         }
     }
 }

@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{7034DDAB-2959-4BEF-9395-5908C19D2457}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HTTPServer/Response.cs">
+    <Files>
+      <File FileName="HTTPServer/Configuration.cs" Line="12" Column="36" />
+      <File FileName="HTTPServer/Logger.cs" Line="6" Column="1" />
+      <File FileName="HTTPServer/Program.cs" Line="14" Column="1" />
+      <File FileName="HTTPServer/Request.cs" Line="169" Column="17" />
+      <File FileName="HTTPServer/Server.cs" Line="179" Column="24" />
+      <File FileName="HTTPServer/Response.cs" Line="33" Column="105" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HTTPServer" expanded="True">
+            <Node name="HTTPServer" expanded="True">
+              <Node name="Response.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>requestString</Value>
+          <Value>requestLines</Value>
+          <Value>relativeURI</Value>
+          <Value>headerLines</Value>
+          <Value>header</Value>
+          <Value>firstHeader</Value>
+          <Value>request.requestStringArr</Value>
+          <Value>x</Value>
+          <Value>statusLine</Value>
+          <Value>validUri</Value>
+          <Value>request.HeaderLines</Value>
+          <Value>postMethodData</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HTTPServer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
