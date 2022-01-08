@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Newtonsoft.Json;
 namespace HTTPServer
 {
     public enum RequestMethod
@@ -181,6 +181,7 @@ namespace HTTPServer
                 foreach (string keyValue in pairs)
                 {
                     String[] keyValueSeparated = keyValue.Split('=');
+                    keyValueSeparated[1] = keyValueSeparated[1].Split('\0')[0];   //return value may be	name=mohamed&otherName=agina\0\0\0\0\0\
                     receivedPostData[keyValueSeparated[0]] = keyValueSeparated[1];
                 }
                 return receivedPostData;
@@ -192,20 +193,19 @@ namespace HTTPServer
             
         }
 
-        public String convertPostDataToString(Dictionary<String, String> postData)
+        public String convertPostDataToJsonString(Dictionary<String, String> postData)
         {
             //convert {
             //name: mohamed,
             //otherName: agina
             //}
-            //to a readable string
+            //to a json string
 
-            String data = $"This is the data I received at /{relativeURI}:\n";
+            //String data = $"This is the data I received at /{relativeURI}:\n";
+            postData["relativeURI"] = relativeURI;
 
-            foreach (KeyValuePair<String, String> kv in postData)
-            {
-                data += kv.Key + ": " + kv.Value + "\n";
-            }
+            string data = JsonConvert.SerializeObject(postData, Formatting.Indented);
+            Console.WriteLine("this is the data: " + data);
             return data;
         }
 

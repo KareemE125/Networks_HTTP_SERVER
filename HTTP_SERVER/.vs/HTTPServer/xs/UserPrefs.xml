@@ -1,19 +1,19 @@
 ﻿<Properties StartupConfiguration="{7034DDAB-2959-4BEF-9395-5908C19D2457}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HTTPServer/Response.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HTTPServer/Request.cs">
     <Files>
-      <File FileName="HTTPServer/Configuration.cs" Line="12" Column="36" />
+      <File FileName="HTTPServer/Configuration.cs" Line="19" Column="6" />
       <File FileName="HTTPServer/Logger.cs" Line="6" Column="1" />
       <File FileName="HTTPServer/Program.cs" Line="14" Column="1" />
-      <File FileName="HTTPServer/Request.cs" Line="169" Column="17" />
-      <File FileName="HTTPServer/Server.cs" Line="179" Column="24" />
-      <File FileName="HTTPServer/Response.cs" Line="33" Column="105" />
+      <File FileName="HTTPServer/Request.cs" Line="205" Column="51" />
+      <File FileName="HTTPServer/Server.cs" Line="227" Column="77" />
+      <File FileName="HTTPServer/Response.cs" Line="43" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HTTPServer" expanded="True">
             <Node name="HTTPServer" expanded="True">
-              <Node name="Response.cs" selected="True" />
+              <Node name="Request.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -32,6 +32,7 @@
           <Value>validUri</Value>
           <Value>request.HeaderLines</Value>
           <Value>postMethodData</Value>
+          <Value>postData</Value>
         </State>
       </Pad>
     </Pads>

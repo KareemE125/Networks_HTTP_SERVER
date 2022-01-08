@@ -230,13 +230,13 @@ namespace HTTPServer
             {
                 request.relativeURI = Configuration.BadRequestDefaultPageName;
                 statusCode = StatusCode.BadRequest;
-                content = "Invalid data format used";
-                return new Response(statusCode, "text", content);
+                content = request.convertPostDataToJsonString(new Dictionary<string, string>() { { "Error", "Invalid data format used" } });
+                return new Response(statusCode, "application/json", content);
             }
 
-            content = request.convertPostDataToString(receivedPostData);
+            content = request.convertPostDataToJsonString(receivedPostData);
             statusCode = StatusCode.OK;
-            return new Response(statusCode, "text", content);
+            return new Response(statusCode, "application/json", content);
         }
     }
 }
