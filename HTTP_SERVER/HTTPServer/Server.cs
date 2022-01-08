@@ -95,7 +95,7 @@ namespace HTTPServer
             string content;
             try
             {
-
+     //throw new Exception();
                 //check for bad request
                 notBadRequest = request.ParseRequest();// &&  //need to make sure that I parsed req successfully
                     //request.relativeURI.Contains(".html"); //and that html extension is present
@@ -129,7 +129,7 @@ namespace HTTPServer
 
 
                 //check for not found request
-                String physicalPath = Configuration.RootPath + "/" + request.relativeURI;
+                String physicalPath = Configuration.RootPath + "\\" + request.relativeURI;
                 if (!File.Exists(physicalPath))
                 {
                     request.relativeURI = Configuration.NotFoundDefaultPageName;
