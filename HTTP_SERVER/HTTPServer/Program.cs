@@ -13,9 +13,9 @@ namespace HTTPServer
         { 
 
             CreateRedirectionRulesFile();
-            Server s1 = new Server(1000, "redirectionRules.txt");
-            Console.WriteLine("Booting.....");
-            s1.StartServer();
+            Server server = new Server(1000, "redirectionRules.txt");
+            Console.WriteLine("Listening.....");
+            server.StartServer();
         }
 
         static void CreateRedirectionRulesFile()
@@ -25,7 +25,6 @@ namespace HTTPServer
                 streamWriter.Write("aboutus.html-aboutus2.html");
             }
         }
-
 
     }
 }

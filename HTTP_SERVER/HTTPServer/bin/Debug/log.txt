@@ -322,3 +322,1198 @@ Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-block
   at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
 
 
+Datetime: 1/8/2022 7:21:04 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:21:04 PM
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/bin/Debug/C:\inetpub\wwwroot\fcis1/NotFound.html".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0015e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:223 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:106 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:182 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:167 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:303 
+  at System.IO.File.ReadAllText (System.String path) [0x00026] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:282 
+  at HTTPServer.Server.LoadDefaultPage (System.String defaultPageName) [0x0000e] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:184 
+
+
+Datetime: 1/8/2022 7:21:05 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:21:05 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:22:20 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:22:21 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:22:21 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:22:21 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'favicon.ico' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:22:22 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:22:28 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:22:29 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:22:29 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:27:25 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'vghjvhjh.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:27:26 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:27:26 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:28:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:28:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:28:40 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 7:28:41 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:28:41 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:50:32 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:50:32 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:50:32 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'favicon.ico' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:50:33 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:51:28 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:51:28 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:52:20 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:52:20 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:52:48 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:52:49 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:23 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus1.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:54:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:29 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:54:30 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:30 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:33 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:54:34 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:34 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:39 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:54:40 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:54:40 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:55:17 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:55:18 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:55:18 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:55:22 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 7:55:23 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 7:55:23 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:22:24 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 8:22:25 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:11 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.LoadHeaderLines () [0x0001b] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:121 
+
+
+Datetime: 1/8/2022 8:23:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:12 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.LoadHeaderLines () [0x0001b] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:121 
+
+
+Datetime: 1/8/2022 8:23:13 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:29 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.LoadHeaderLines () [0x0001b] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:121 
+
+
+Datetime: 1/8/2022 8:23:30 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:30 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:23:30 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.LoadHeaderLines () [0x0001b] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:121 
+
+
+Datetime: 1/8/2022 8:23:31 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:24:11 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 8:24:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:26:06 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:172 
+
+
+Datetime: 1/8/2022 8:26:07 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:26:07 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:63 
+
+
+Datetime: 1/8/2022 8:42:45 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:173 
+
+
+Datetime: 1/8/2022 8:44:40 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:173 
+
+
+Datetime: 1/8/2022 8:44:41 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 8:44:41 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 8:44:52 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:173 
+
+
+Datetime: 1/8/2022 8:44:53 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 8:44:53 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:08:52 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:08:52 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:09:16 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:09:16 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:09:36 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:12:07 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:173 
+
+
+Datetime: 1/8/2022 9:12:08 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:12:08 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:12:24 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:173 
+
+
+Datetime: 1/8/2022 9:12:25 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:48:47 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 9:48:48 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:48:48 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:52:48 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 9:52:49 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:52:49 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:55:01 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 9:55:02 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:55:02 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:55:08 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 9:55:09 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:57:33 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 9:57:34 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:57:52 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 9:57:52 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:04:01 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:04:02 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:05:23 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:05:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:06:22 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:06:23 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:06:23 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:06:24 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:06:25 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:06:27 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutuvfdhjkfdevsnkllrv.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:06:28 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:06:28 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:34:52 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'abouthhus.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:34:53 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:35:12 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:35:13 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:38:35 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:38:36 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:39:00 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:39:01 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:39:27 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:39:28 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:39:59 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:40:17 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:40:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:40:42 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:40:43 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:41:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:42:45 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:42:46 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:42:53 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:43:01 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:43:16 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:43:53 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:43:54 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:44:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:44:13 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:44:14 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:45:04 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:50:04 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:53:46 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:194 
+
+
+Datetime: 1/8/2022 10:53:47 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:15 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:199 
+
+
+Datetime: 1/8/2022 10:57:16 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:22 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:24 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:199 
+
+
+Datetime: 1/8/2022 10:57:25 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:26 PM
+Message: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at HTTPServer.Request.extractPostData () [0x00053] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Request.cs:199 
+
+
+Datetime: 1/8/2022 10:57:27 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:29 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:32 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'nbscdjkbnjklcdsnlkdcs.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:57:32 PM
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/bin/Debug/C:\inetpub\wwwroot\fcis1/NotFound.html".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0015e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:223 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:106 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:182 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:167 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:303 
+  at System.IO.File.ReadAllText (System.String path) [0x00026] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:282 
+  at HTTPServer.Server.LoadDefaultPage (System.String defaultPageName) [0x0000e] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:184 
+
+
+Datetime: 1/8/2022 10:57:33 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:33 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'nbscdjkbnjklcdsnlkdcs.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:57:33 PM
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/bin/Debug/C:\inetpub\wwwroot\fcis1/NotFound.html".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0015e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:223 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:106 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:182 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:167 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:303 
+  at System.IO.File.ReadAllText (System.String path) [0x00026] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:282 
+  at HTTPServer.Server.LoadDefaultPage (System.String defaultPageName) [0x0000e] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:184 
+
+
+Datetime: 1/8/2022 10:57:34 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:57:46 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:57:46 PM
+Message: System.IO.DirectoryNotFoundException: Could not find a part of the path "/Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/bin/Debug/C:\inetpub\wwwroot\fcis1/NotFound.html".
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0015e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:223 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/corlib/System.IO/FileStream.cs:106 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:182 
+  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/IO/StreamReader.cs:167 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string,System.Text.Encoding,bool)
+  at System.IO.File.InternalReadAllText (System.String path, System.Text.Encoding encoding) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:303 
+  at System.IO.File.ReadAllText (System.String path) [0x00026] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/System.IO.FileSystem/src/System/IO/File.cs:282 
+  at HTTPServer.Server.LoadDefaultPage (System.String defaultPageName) [0x0000e] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:184 
+
+
+Datetime: 1/8/2022 10:57:47 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:06 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:58:07 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:08 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'dscvdf.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:58:09 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:17 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:58:18 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:18 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:21 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'main.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:58:22 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:22 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:32 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'instagram.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 10:58:33 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 10:58:33 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:17:23 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 11:17:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:17:24 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:17:31 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 11:17:32 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:17:32 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:18:11 PM
+Message: System.Collections.Generic.KeyNotFoundException: The given key 'aboutus2.html' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/external/corefx/src/Common/src/CoreLib/System/Collections/Generic/Dictionary.cs:226 
+  at HTTPServer.Server.GetRedirectionPagePathIFExist (System.String relativePath) [0x00002] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:168 
+
+
+Datetime: 1/8/2022 11:18:12 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+
+Datetime: 1/8/2022 11:18:39 PM
+Message: System.Net.Sockets.SocketException (0x80004005): Operation on non-blocking socket would block
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer, System.Int32 offset, System.Int32 size, System.Net.Sockets.SocketFlags socketFlags) [0x00010] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1775 
+  at System.Net.Sockets.Socket.Receive (System.Byte[] buffer) [0x00000] in /Users/builder/jenkins/workspace/build-package-osx-mono/2020-02/external/bockbuild/builds/mono-x64/mcs/class/referencesource/System/net/System/Net/Sockets/Socket.cs:1763 
+  at HTTPServer.Server.HandleConnection (System.Object obj) [0x00026] in /Users/mohamed247/Desktop/Uni/Networks/Project/Networks_HTTP_SERVER/HTTP_SERVER/HTTPServer/Server.cs:64 
+
+

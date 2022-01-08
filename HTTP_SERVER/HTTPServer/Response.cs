@@ -19,7 +19,6 @@ namespace HTTPServer
     class Response
     {
         string responseString;
-        Request request;
 
         public string ResponseString
         {
@@ -35,16 +34,19 @@ namespace HTTPServer
             String statusLine = GetStatusLine(code);
 
             responseString = statusLine + "\r\n" +
-                            "Content_Type:" + contentType + "\r\n" +
+                            "Content_Type:" + contentType + "\r\n" +    //usually only text/html
                             "Content_Length:" + content.Length + "\r\n" +
                             "Date:" + DateTime.Now + "\r\n";
 
-            if (!headHttpStatus)  //head doesnt contain content, but everything else is just like get request
-                responseString += "\r\n" + content;
-            
-
             if (redirectoinPath != "")
-                responseString = responseString + "Location: "+ redirectoinPath; 
+                responseString += "Location:" + redirectoinPath + "\r\n";
+
+            responseString += "\r\n";  //add blank line to differentiate between headers and body
+
+            if (!headHttpStatus)  //head doesnt contain content, but everything else is just like get request
+                responseString += content;
+
+
 
             Console.WriteLine("This is the response string: \n" + responseString);
         }

@@ -25,12 +25,10 @@ namespace HTTPServer
 
         string[] requestLines; //-> ["GET", "/main.html", "HTTP/1.1"]
        
-        string[] requestStringArr; //-> GET /main.html HTTP/1.1
-                                   //   Host: 127.0.0.1:1000
-                                   //   Connection: keep-alive
-                                   //   sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"
-                                   //   sec-ch-ua-mobile: ?0
-                                   //   sec-ch-ua-platform: "macOS"
+        string[] requestStringArr; //-> ["GET /main.html HTTP/1.1"
+                                   //   "Host: 127.0.0.1:1000",
+                                   //   "Connection: keep-alive",
+                                   //   "sec-ch-ua: " Not A;"]
 
         public RequestMethod method;
         public string relativeURI;   //-> aboutus.html
@@ -61,8 +59,8 @@ namespace HTTPServer
         public bool ParseRequest()
         {
 
-            requestLines = requestString.Split(' '); //"GET /aboutus.html HTTP/1.1\r" -> 3 separate values
-            bool isBlanckLine = ValidateBlankLine();
+            requestLines = requestString.Split(' '); //"GET /aboutus.html HTTP/1.1\r" -------> 3 separate values
+            bool isBlanckLine = ValidateRequest();
            
             if (requestLines.Length >= 3 && isBlanckLine)
             {
@@ -90,14 +88,17 @@ namespace HTTPServer
                     method = RequestMethod.HEAD;
                 else return false;
 
-                // --> /aboutus.html  --> aboutus.html
+                // --> /aboutus.html  --> aboutus.html 
                 //remove slash from aboutus.html
                 relativeURI = requestLines[1].Trim().Remove(0, 1);
 
 
-                if (requestLines[2].Trim() == "HTTP/1.1") { httpVersion = HTTPVersion.HTTP11; Configuration.ServerHTTPVersion = "HTTP/1.1"; }
-                else if (requestLines[2].Trim() == "HTTP/1.0") { httpVersion = HTTPVersion.HTTP10; Configuration.ServerHTTPVersion = "HTTP/1.0"; }
-                else if (requestLines[2].Trim() == "HTTP/0.9") { httpVersion = HTTPVersion.HTTP09; Configuration.ServerHTTPVersion = "HTTP/0.9"; }
+                if (requestLines[2].Trim() == "HTTP/1.1")
+                    httpVersion = HTTPVersion.HTTP11;
+                else if (requestLines[2].Trim() == "HTTP/1.0")
+                    httpVersion = HTTPVersion.HTTP10;
+                else if (requestLines[2].Trim() == "HTTP/0.9")
+                    httpVersion = HTTPVersion.HTTP09;
                 else return false;
 
                 return true;
@@ -105,7 +106,8 @@ namespace HTTPServer
             catch (Exception ex)
             {
                 Logger.LogException(ex);
-                return false; }
+                return false;
+            }
         }
 
         private bool ValidateIsURI(string uri)
@@ -117,12 +119,12 @@ namespace HTTPServer
             try
             {
 
-                String[] header = requestStringArr[1].Split(':'); //Host: 127.0.0.1:1000 -> ["Host", and so on]
+                String[] header = requestStringArr[1].Split(':'); //Host: 127.0.0.1:1000 -> ["Host", " 127.0.0.1", "1000"]
                 String ipAndPort = header[1]+":"+ header[2];
-                headerLines.Add(header[0].Trim(), ipAndPort.Trim());
+                headerLines.Add(header[0].Trim(), ipAndPort.Trim()); //add host as key and ip/port as value to dictionary
 
 
-                foreach ( String elem in requestStringArr.Skip(2))
+                foreach ( String elem in requestStringArr.Skip(2)) //skip "GET ... ..." and "Host ... ... .."
                 {
                     //Convert headers to map
                     //
@@ -144,7 +146,7 @@ namespace HTTPServer
                 return false;
             }
         }
-        private bool ValidateBlankLine()
+        private bool ValidateRequest()
         {
             //validate all 3 parts of the request "GET /aboutus.html HTTP/1.1\r" are not empty
             for (int i = 0; i < requestLines.Length; i++)
@@ -153,7 +155,15 @@ namespace HTTPServer
                 if (requestLines[i] == " " || String.IsNullOrEmpty(requestLines[i]))
                     return false; 
             }
-            return true;
+
+            //validate presence of blank line to differentiate between headers and body
+            for (int i = 0; i < requestStringArr.Length; i++)
+            {
+                if (requestStringArr[i] == "\r")   //not \n since I split on \r
+                    return true;
+            }
+
+            return false;
         }
 
         public Dictionary<String, String> extractPostData()
@@ -173,17 +183,24 @@ namespace HTTPServer
             //}
             try
             {
-                int lastIdx = requestStringArr.Length - 1;
+                int lastIdx = requestStringArr.Length - 1;   //data is present in last sentence of request
                 string postMethodData = requestStringArr[lastIdx];
 
+                //postMethodData may be	name=mohamed&otherName=agina\0\0\0\0\0\
+
+
                 Dictionary<String, String> receivedPostData = new Dictionary<string, string>();
-                String[] pairs = postMethodData.Split('&');
+                String[] pairs = postMethodData.Split('&');  //split key-value pairs on the &
+
                 foreach (string keyValue in pairs)
                 {
-                    String[] keyValueSeparated = keyValue.Split('=');
-                    keyValueSeparated[1] = keyValueSeparated[1].Split('\0')[0];   //return value may be	name=mohamed&otherName=agina\0\0\0\0\0\
-                    receivedPostData[keyValueSeparated[0]] = keyValueSeparated[1];
+                    String[] keyValueSeparated = keyValue.Split('=');  //split key from value using equal
+
+                    keyValueSeparated[1] = keyValueSeparated[1].Split('\0')[0];   //agina\0\0\0\0 -> agina
+
+                    receivedPostData[keyValueSeparated[0]] = keyValueSeparated[1];  //add key and value to dictionary
                 }
+
                 return receivedPostData;
             }catch(Exception e)
             {
@@ -201,10 +218,9 @@ namespace HTTPServer
             //}
             //to a json string
 
-            //String data = $"This is the data I received at /{relativeURI}:\n";
             postData["relativeURI"] = relativeURI;
 
-            string data = JsonConvert.SerializeObject(postData, Formatting.Indented);
+            string data = JsonConvert.SerializeObject(postData, Formatting.Indented);    //convert object to json string
             Console.WriteLine("this is the data: " + data);
             return data;
         }

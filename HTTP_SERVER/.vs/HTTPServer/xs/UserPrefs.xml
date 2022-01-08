@@ -1,38 +1,26 @@
 ﻿<Properties StartupConfiguration="{7034DDAB-2959-4BEF-9395-5908C19D2457}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HTTPServer/Request.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HTTPServer/Configuration.cs">
     <Files>
-      <File FileName="HTTPServer/Configuration.cs" Line="19" Column="6" />
-      <File FileName="HTTPServer/Logger.cs" Line="6" Column="1" />
-      <File FileName="HTTPServer/Program.cs" Line="14" Column="1" />
-      <File FileName="HTTPServer/Request.cs" Line="205" Column="51" />
-      <File FileName="HTTPServer/Server.cs" Line="227" Column="77" />
-      <File FileName="HTTPServer/Response.cs" Line="43" Column="52" />
+      <File FileName="HTTPServer/Program.cs" Line="16" Column="63" />
+      <File FileName="HTTPServer/Server.cs" Line="87" Column="18" />
+      <File FileName="HTTPServer/Request.cs" Line="167" Column="7" />
+      <File FileName="HTTPServer/Response.cs" Line="18" Column="1" />
+      <File FileName="HTTPServer/Logger.cs" Line="12" Column="9" />
+      <File FileName="HTTPServer/Configuration.cs" Line="10" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="HTTPServer" expanded="True">
             <Node name="HTTPServer" expanded="True">
-              <Node name="Request.cs" selected="True" />
+              <Node name="Configuration.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>requestString</Value>
-          <Value>requestLines</Value>
-          <Value>relativeURI</Value>
-          <Value>headerLines</Value>
-          <Value>header</Value>
-          <Value>firstHeader</Value>
-          <Value>request.requestStringArr</Value>
-          <Value>x</Value>
-          <Value>statusLine</Value>
-          <Value>validUri</Value>
-          <Value>request.HeaderLines</Value>
-          <Value>postMethodData</Value>
-          <Value>postData</Value>
+          <Value>requestStringArr</Value>
         </State>
       </Pad>
     </Pads>

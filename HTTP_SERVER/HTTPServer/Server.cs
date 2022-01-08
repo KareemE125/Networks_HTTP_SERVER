@@ -18,7 +18,7 @@ namespace HTTPServer
         public Server(int portNumber, string redirectionMatrixPath)
         { 
             LoadRedirectionRules(redirectionMatrixPath);
-
+                                      //ip v4                       //TCP
             serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             IPEndPoint serverEndpoint = new IPEndPoint(IPAddress.Any, portNumber);  
@@ -33,6 +33,7 @@ namespace HTTPServer
 
             while (true)
             {
+                //main thread is constantly listening for requests
                 
                 Socket clientSocket = this.serverSocket.Accept();
 
@@ -60,7 +61,7 @@ namespace HTTPServer
                 try
                 {
                     data = new byte[8192];
-                    receivedLength = clientSock.Receive(data);
+                    receivedLength = clientSock.Receive(data);  //blocking function
 
 
                     if (receivedLength == 0)
@@ -95,7 +96,7 @@ namespace HTTPServer
             string content;
             try
             {
-     //throw new Exception();
+                //throw new Exception();
                 //check for bad request
                 notBadRequest = request.ParseRequest();// &&  //need to make sure that I parsed req successfully
                     //request.relativeURI.Contains(".html"); //and that html extension is present
@@ -114,14 +115,13 @@ namespace HTTPServer
                 {
                     return HandlePostRequest(request);
                 }
-                
 
                 //check for redirect request
-                String redirectedPhysicalPath = GetRedirectionPagePathIFExist(request.relativeURI);
+                String redirectedPhysicalPath = GetRedirectionPagePathIFExist(request.relativeURI);   //request.relativeURI = aboutus.html
                 if (redirectedPhysicalPath != "")
                 {
                     statusCode = StatusCode.Redirect;
-                    content = LoadDefaultPage(redirectedPhysicalPath);
+                    content = LoadDefaultPage(request.relativeURI);  //load aboutus.html normally, and let the browser redirect by itself
                     return new Response(statusCode, "text/html", content,
                         redirectedPhysicalPath, headHttpStatus: request.method == RequestMethod.HEAD);
                 }
@@ -129,7 +129,7 @@ namespace HTTPServer
 
 
                 //check for not found request
-                String physicalPath = Configuration.RootPath + "\\" + request.relativeURI;
+                String physicalPath = Path.Combine(Configuration.RootPath, request.relativeURI);
                 if (!File.Exists(physicalPath))
                 {
                     request.relativeURI = Configuration.NotFoundDefaultPageName;
@@ -177,7 +177,7 @@ namespace HTTPServer
 
         private string LoadDefaultPage(string defaultPageName)
         {
-            string filePath = Path.Combine(Configuration.RootPath, defaultPageName);
+            string filePath = Path.Combine(Configuration.RootPath, defaultPageName);   //add slash to get correct path
 
             try
             {
@@ -211,7 +211,7 @@ namespace HTTPServer
             catch (Exception ex)
             {
                 Logger.LogException(ex);
-                Environment.Exit(1);
+                Environment.Exit(1);  //must exit because redirectionrules are necessary
             }
         }
 
@@ -222,21 +222,34 @@ namespace HTTPServer
             //Accept - Language: en - GB,en; q = 0.9
             //
             //name=mohamed&otherName=agina
-
-            String content;
-            Dictionary<String, String> receivedPostData = request.extractPostData();
-
-            if (receivedPostData.Count == 0)
+            try
             {
-                request.relativeURI = Configuration.BadRequestDefaultPageName;
-                statusCode = StatusCode.BadRequest;
-                content = request.convertPostDataToJsonString(new Dictionary<string, string>() { { "Error", "Invalid data format used" } });
+                String content;
+                Dictionary<String, String> receivedPostData = request.extractPostData();
+
+                if (receivedPostData.Count == 0)   //cannot properly parse the given data
+                {
+                    //request.relativeURI = Configuration.BadRequestDefaultPageName;
+                    statusCode = StatusCode.BadRequest;
+                    content = request.convertPostDataToJsonString(new Dictionary<string, string>() { { "Error", "Invalid data format used" } });
+                    return new Response(statusCode, "application/json", content);
+                }
+
+                content = request.convertPostDataToJsonString(receivedPostData);
+                statusCode = StatusCode.OK;
                 return new Response(statusCode, "application/json", content);
             }
-
-            content = request.convertPostDataToJsonString(receivedPostData);
-            statusCode = StatusCode.OK;
-            return new Response(statusCode, "application/json", content);
+            catch (Exception ex)
+            {
+                Logger.LogException(ex);
+                String content;
+                //Internal server error request
+                request.relativeURI = Configuration.InternalErrorDefaultPageName;
+                statusCode = StatusCode.InternalServerError;
+                content = LoadDefaultPage(request.relativeURI);
+                return new Response(statusCode, "text/html", content,
+                    headHttpStatus: request.method == RequestMethod.HEAD);
+            }
         }
     }
 }

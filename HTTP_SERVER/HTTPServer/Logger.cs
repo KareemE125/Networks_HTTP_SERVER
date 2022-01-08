@@ -8,12 +8,16 @@ namespace HTTPServer
 {
     class Logger
     {
+        public static string obj = "";
         public static void LogException(Exception ex)
         {
-            using (StreamWriter sr = new StreamWriter("log.txt", true))
+            lock (obj)
             {
-                sr.WriteLine("Datetime: " + DateTime.Now + "\nMessage: " +
-                    ex.ToString() + "\n\n");
+                using (StreamWriter sr = new StreamWriter("log.txt", true))
+                {
+                    sr.WriteLine("Datetime: " + DateTime.Now + "\nMessage: " +
+                        ex.ToString() + "\n\n");
+                }
             }
         }
     }
